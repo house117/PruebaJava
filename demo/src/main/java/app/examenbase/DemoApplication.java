@@ -1,4 +1,4 @@
-package com.example.demo;
+package app.examenbase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,15 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import ExamenBase.Persona;
+import app.examenrest.ClienteController;
 
-@SpringBootApplication
+
 @RestController
 public class DemoApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
 	
 	@PostMapping("/ExamenBase")
 	public String nombre(@RequestParam(value = "nombre", defaultValue = "NoNombre") String name,

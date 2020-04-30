@@ -1,4 +1,4 @@
-package ExamenREST;
+package app.examenrest;
 
 import java.sql.Date;
 
@@ -12,16 +12,17 @@ public class ClienteModel {
 	private Integer edad;
 	private Double estatura;
 	private Double peso;
-	private Double IMC;
-	private Double GEB;
-	private Double ETA;
+	private Double imc;
+	private Double geb;
+	private Double eta;
 	private Date fecha_creacion;
 	private Date fecha_actualizacion;
 	public ClienteModel() {
 		
 	}
+	
 	public ClienteModel(Integer cliente_id, String nombre_usuario, String contrasena, String nombre, String apellidos,
-			String correo_electronico, Integer edad, Double estatura, Double peso, Double iMC, Double gEB, Double eTA,
+			String correo_electronico, Integer edad, Double estatura, Double peso, Double imc, Double geb, Double eta,
 			Date fecha_creacion, Date fecha_actualizacion) {
 		super();
 		this.cliente_id = cliente_id;
@@ -33,12 +34,13 @@ public class ClienteModel {
 		this.edad = edad;
 		this.estatura = estatura;
 		this.peso = peso;
-		IMC = iMC;
-		GEB = gEB;
-		ETA = eTA;
+		this.imc = imc;
+		this.geb = geb;
+		this.eta = eta;
 		this.fecha_creacion = fecha_creacion;
 		this.fecha_actualizacion = fecha_actualizacion;
 	}
+
 	public Integer getCliente_id() {
 		return cliente_id;
 	}
@@ -93,23 +95,23 @@ public class ClienteModel {
 	public void setPeso(Double peso) {
 		this.peso = peso;
 	}
-	public Double getIMC() {
-		return IMC;
+	public Double getImc() {
+		return imc;
 	}
-	public void setIMC(Double iMC) {
-		IMC = iMC;
+	public void setImc(Double imc) {
+		this.imc = imc;
 	}
-	public Double getGEB() {
-		return GEB;
+	public Double getGeb() {
+		return geb;
 	}
-	public void setGEB(Double gEB) {
-		GEB = gEB;
+	public void setGeb(Double geb) {
+		this.geb = geb;
 	}
-	public Double getETA() {
-		return ETA;
+	public Double getEta() {
+		return eta;
 	}
-	public void setETA(Double eTA) {
-		ETA = eTA;
+	public void setEta(Double eta) {
+		this.eta = eta;
 	}
 	public Date getFecha_creacion() {
 		return fecha_creacion;
@@ -123,5 +125,6 @@ public class ClienteModel {
 	public void setFecha_actualizacion(Date fecha_actualizacion) {
 		this.fecha_actualizacion = fecha_actualizacion;
 	}
+	
 	
 }

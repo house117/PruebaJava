@@ -1,4 +1,4 @@
-package ExamenBase;
+package app.examenbase;
 
 public class Persona {
 	private String nombre ="";
